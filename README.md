@@ -1,6 +1,8 @@
 # Overview
 We tested associations between HLA genotypes and colorectal tumour-infiltrating T-cell receptor (TCR) composition. We refer to these as TCR quantitative trait loci (tcrQTL) analyses. We further assessed whether associations differed by tumour mismatch repair deficiency (MMRd) status, and conducted HLA colocalisation analyses with colorectal cancer risk.
 
+---
+
 ## Main dataset
 We analysed controlled-access germline genotype data and tumour TCR sequencing profiles from 2,750 incident, population-based colorectal cancer cases from the Molecular Epidemiology of Colorectal Cancer (MECC) study, generated using the immunoSEQ platform. Raw TCR sequencing data are available via the Adaptive Biotechnologies immuneACCESS repository: https://clients.adaptivebiotech.com/pub/schmit-2025-bmcg. 
 - Reference: Schmit SL, Tsai YY, Bonner JD, Sanz-Pamplona R, Joshi AD, Ugai T, et al. Germline genetic regulation of the colorectal tumor immune microenvironment. BMC Genomics. 2024;25(1):409.
