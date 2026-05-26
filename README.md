@@ -11,7 +11,8 @@ We analysed controlled-access germline genotype data and tumour TCR sequencing p
 - Risk-modifying HLA variants are hypothesised to influence colorectal cancer risk by altering tumour neoantigen presentation to hypervariable TCRs.
 - We therefore investigated whether HLA allomorphs (2-field alleles, class II heterodimers) and amino acid polymorphisms influence tumour-infiltrating TCR composition. These analyses support emerging genetic causal inference frameworks, including ImmunoXcan (https://github.com/ameyers99/ImmunoXcan) and HLAcoloc (https://github.com/DrGBL/hlacoloc), to identify putative HLA–TCR-cancer relationships underlying disease aetiology.
 
-## Quantitative TCR phenotypes
+## tcrQTL analysis
+### Quantitative phenotypes
 Residualised, rank normalised, standardised
 Amino acid frequency at each CDR3 position for each length, plus joint frequency of TRBV and amino acid frequency at each CDR3 position of each length
 TRBV gene/family usage
@@ -19,8 +20,7 @@ Number of templates for the given feature normalised by the total number of prod
 Linear regression
 Univariate regularised (LASSO, BSLMM, GBLUP, elastic net) (reference script) and multivariate regularised regression (multivariate regression with covariance estimation, multivariate elastic net, joinet stacked elastic net, sparse PLS, sparse group lasso, multi-task lasso / L21 regularization, super learner stacking) (reference script)
 GREML heritability, modified multi-allelic GRM (reference script)
-
-## Binary TCR phenotypes
+### Binary phenotypes
 GREML heritability, liability threshold model (reference script)
 Presence/absence
 CDR3, TRBV+CDR3; and further clustered using GLIPH
