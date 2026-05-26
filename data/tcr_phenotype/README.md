@@ -5,4 +5,4 @@
 ### TRBV family frequency  
 - ./trbv.txt.gz
 ### Joint TRBV family + CDR3 position-specific amino acid frequency, for receptor length 12-18
-- ./cdr3-trbv_aa.txt.gz
+- ./cdr3-trbv_aa.txt.gz (pre-filtered for expression prevalence in ≥1% of all samples)
