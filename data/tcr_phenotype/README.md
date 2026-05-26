@@ -59,20 +59,20 @@ Binarised into presence/absence and filtered for ≥k% prevalence before analysi
 
 ---
 
-### CDR3 specificity clusters (GLIPH; TRBV agnostic)
+### CDR3 specificity clusters (TRBV agnostic)
 - `./cdr3_gliph.txt.gz`
 
 **Notes:**
-- Pre-filtered for public sequences present in **n≥2 samples** before clustering
+- Pre-filtered for public sequences present in **n≥2 samples** before clustering with GLIPH
 - Public, unclustered sequences will overlap those in `./cdr3_seq.txt.gz`
 - Restricted to receptors with CDR3 length >6 amino acids
 
 ---
 
-### CDR3 specificity clusters (GLIPH; conditioned on TRBV family)
+### CDR3 specificity clusters (conditioned on TRBV family)
 - `./cdr3-trbv_gliph.txt.gz`
 
 **Notes:**
-- Pre-filtered for public sequences present in **n≥2 samples** before clustering
+- Pre-filtered for public sequences present in **n≥2 samples** before clustering with GLIPH
 - Public, unclustered sequences will overlap those in `./cdr3-trbv_seq.txt.gz`
 - Restricted to receptors with resolved TRBV family and CDR3 length >6 amino acids
