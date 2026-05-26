@@ -10,6 +10,8 @@ Files provided in **long format** with the columns:
 
 ## Quantitative phenotypes
 
+Residualised, rank-normalised, and standardised before analysis
+
 ### CDR3 position-specific amino acid frequencies (length 12–18)
 - `./cdr3_aa.txt.gz`
 
@@ -39,7 +41,7 @@ Combined TRBV family and CDR3 position-specific amino acid features.
 ---
 
 ## Binary phenotypes
-These phenotypes were binarised into presence/absence and filtered for ≥5% prevalence before analysis.
+Binarised into presence/absence and filtered for ≥5% prevalence before analysis.
 
 ### CDR3 amino acid sequences
 - `./cdr3_seq.txt.gz`
