@@ -10,3 +10,19 @@ We analysed controlled-access germline genotype data and tumour TCR sequencing p
 - HLA genotypes are established quantitative trait loci (QTL) for circulating TCR repertoire features.
 - Risk-modifying HLA variants are hypothesised to influence colorectal cancer susceptibility by altering tumour neoantigen presentation to hypervariable TCRs.
 - We therefore investigated associations between HLA alleles and amino acid polymorphisms with tumour-infiltrating TCR composition. These analyses support emerging genetic causal inference frameworks, including ImmunoXcan (https://github.com/ameyers99/ImmunoXcan) and HLAcoloc (https://github.com/DrGBL/hlacoloc), to identify putative HLA–TCR–cancer relationships stratified by germline and somatic MMRd status.
+
+# Quantitative TCR phenotypes
+## CDR3 amino acid composition
+- ...
+## TRBV usage 
+- ...
+## tcrQTL analysis
+- ...
+
+# Binary TCR phenotypes
+## Clonotypes
+- ...
+## Antigen specificity clusters
+- ...
+## tcrQTL analysis
+- ...
