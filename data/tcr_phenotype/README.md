@@ -1,6 +1,6 @@
 # TCR phenotype matrices for tcrQTL mapping
 
-Files provided in **long format** with the columns:
+Files provided in **long format** with columns:
 
 - **Sample**: Unique patient identifier  
 - **tcr**: TCR feature identifier (see file-specific definitions below)  
@@ -12,8 +12,12 @@ Files provided in **long format** with the columns:
 
 Residualised, rank-normalised, and standardised before analysis
 
-### CDR3 position-specific amino acid frequencies (length 12-18)
+### CDR3 position-specific amino acid frequencies
 - `./cdr3_aa.txt.gz`
+
+**Notes:**
+- Stratified by CDR3 length;
+- Restricted to length 12-18 amino acids (captures 95% of receptors in the cohort)
 
 **TCR ID format:** `CDR3-length-position-residue`
 
@@ -22,13 +26,18 @@ Residualised, rank-normalised, and standardised before analysis
 ### TRBV family usage
 - `./trbv.txt.gz`
 
+**Notes:**
+- Restricted to receptors with resolved TRBV family
+
 ---
 
-### Joint TRBV family + CDR3 position-specific amino acid frequencies (length 12-18)
+### Joint TRBV family + CDR3 position-specific amino acid frequencies
 - `./cdr3-trbv_aa_public.txt.gz`
 
 **Notes:**
-- Pre-filtered for features present in **≥10% of samples**
+- Stratified by CDR3 length;
+- Restricted to length 12-18 amino acids (captures 95% of receptors in the cohort)
+- Pre-filtered for features present in **≥10% of samples** before upload
 
 **TCR ID format:** `TRBV family + CDR3-length-position-residue`
 
@@ -45,6 +54,9 @@ Binarised into presence/absence and filtered for ≥k% prevalence before analysi
 ### Joint TRBV family + CDR3 amino acid sequences
 - `./cdr3-trbv_seq.txt.gz`
 
+**Notes:**
+- Restricted to receptors with resolved TRBV family
+
 ---
 
 ### CDR3 specificity clusters (GLIPH; TRBV agnostic)
@@ -53,6 +65,7 @@ Binarised into presence/absence and filtered for ≥k% prevalence before analysi
 **Notes:**
 - Pre-filtered for public sequences present in **n≥2 samples** before clustering
 - Public, unclustered sequences will overlap those in `./cdr3_seq.txt.gz`
+- Restricted to receptors with CDR3 length >6 amino acids
 
 ---
 
@@ -62,3 +75,4 @@ Binarised into presence/absence and filtered for ≥k% prevalence before analysi
 **Notes:**
 - Pre-filtered for public sequences present in **n≥2 samples** before clustering
 - Public, unclustered sequences will overlap those in `./cdr3-trbv_seq.txt.gz`
+- Restricted to receptors with resolved TRBV family and CDR3 length >6 amino acids
