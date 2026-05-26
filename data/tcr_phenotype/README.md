@@ -15,8 +15,6 @@ Residualised, rank-normalised, and standardised before analysis
 ### CDR3 position-specific amino acid frequencies (length 12–18)
 - `./cdr3_aa.txt.gz`
 
-CDR3 amino acid frequencies at each position, stratified by receptor length (12–18 amino acids).
-
 **TCR ID format:** `CDR3-length-position-residue`
 
 ---
@@ -24,14 +22,10 @@ CDR3 amino acid frequencies at each position, stratified by receptor length (12�
 ### TRBV family usage
 - `./trbv.txt.gz`
 
-TRBV family frequency across samples.
-
 ---
 
 ### Joint TRBV family + CDR3 position-specific amino acid frequencies (length 12–18)
 - `./cdr3-trbv_aa_public.txt.gz`
-
-Combined TRBV family and CDR3 position-specific amino acid features.
 
 **Notes:**
 - Pre-filtered for features present in **≥10% of samples**
