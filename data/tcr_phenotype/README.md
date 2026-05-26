@@ -12,7 +12,7 @@ Files provided in **long format** with the columns:
 
 Residualised, rank-normalised, and standardised before analysis
 
-### CDR3 position-specific amino acid frequencies (length 12–18)
+### CDR3 position-specific amino acid frequencies (length 12-18)
 - `./cdr3_aa.txt.gz`
 
 **TCR ID format:** `CDR3-length-position-residue`
@@ -24,7 +24,7 @@ Residualised, rank-normalised, and standardised before analysis
 
 ---
 
-### Joint TRBV family + CDR3 position-specific amino acid frequencies (length 12–18)
+### Joint TRBV family + CDR3 position-specific amino acid frequencies (length 12-18)
 - `./cdr3-trbv_aa_public.txt.gz`
 
 **Notes:**
