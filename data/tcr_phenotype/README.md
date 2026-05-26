@@ -13,4 +13,8 @@
 ### CDR3 amino acid sequence
 - ./cdr3_seq.txt.gz
 ### Joint TRBV family + CDR3 amino acid sequence
-- ./trbv-cdr3_seq.txt.gz
+- ./cdr3-trbv_seq.txt.gz
+### CDR3 specificity clusters (GLIPH), without conditioning clustering on TRBV family
+- ./cdr3_gliph.txt.gz
+### CDR3 specificity clusters (GLIPH), conditioning clustering on TRBV family
+- ./cdr3-trbv_gliph.txt.gz
