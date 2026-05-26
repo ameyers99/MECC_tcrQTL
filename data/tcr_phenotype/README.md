@@ -50,7 +50,15 @@ Binarised into presence/absence and filtered for ≥k% prevalence before analysi
 ### CDR3 specificity clusters (GLIPH; TRBV agnostic)
 - `./cdr3_gliph.txt.gz`
 
+**Notes:**
+- Pre-filtered for public sequences present in **n≥2 samples** before clustering
+- Public, unclustered sequences will overlap those in `./cdr3_seq.txt.gz`
+
 ---
 
 ### CDR3 specificity clusters (GLIPH; conditioned on TRBV family)
 - `./cdr3-trbv_gliph.txt.gz`
+
+**Notes:**
+- Pre-filtered for public sequences present in **n≥2 samples** before clustering
+- Public, unclustered sequences will overlap those in `./cdr3-trbv_seq.txt.gz`
