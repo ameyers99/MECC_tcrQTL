@@ -1,6 +1,6 @@
 # TCR phenotypes used for tcrQTL mapping
 
-This directory contains T-cell receptor (TCR) phenotype matrices used as input for tcrQTL mapping analyses.
+Contains TCR phenotype matrices used as input for tcrQTL mapping analyses.
 
 All files are provided in **long format** with the following columns:
 
