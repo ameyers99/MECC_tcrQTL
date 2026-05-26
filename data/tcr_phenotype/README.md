@@ -35,7 +35,7 @@ Residualised, rank-normalised, and standardised before analysis
 ---
 
 ## Binary phenotypes
-Binarised into presence/absence and filtered for ≥5% prevalence before analysis.
+Binarised into presence/absence and filtered for ≥k% prevalence before analysis.
 
 ### CDR3 amino acid sequences
 - `./cdr3_seq.txt.gz`
