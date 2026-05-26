@@ -1,8 +1,6 @@
-# TCR phenotypes used for tcrQTL mapping
+# TCR phenotype matrices for tcrQTL mapping
 
-Contains TCR phenotype matrices used as input for tcrQTL mapping analyses.
-
-All files are provided in **long format** with the following columns:
+Files provided in **long format** with the columns:
 
 - **Sample**: Unique patient identifier  
 - **tcr**: TCR feature identifier (see file-specific definitions below)  
