@@ -1,4 +1,5 @@
 # TCR phenotypes used as input for tcrQTL mapping analysis
+
 ## Quantitative phenotypes:
 ### CDR3 position-specific amino acid frequencies, for receptor length 12-18
 - ./cdr3_aa.txt.gz
@@ -6,3 +7,7 @@
 - ./trbv.txt.gz
 ### Joint TRBV family + CDR3 position-specific amino acid frequency, for receptor length 12-18
 - ./cdr3-trbv_aa.txt.gz (pre-filtered for expression prevalence in ≥1% of all samples)
+
+## Binary phenotypes
+### CDR3 amino acid sequence
+- ./cdr3_seq.txt.gz
