@@ -8,7 +8,7 @@ Files provided in **long format** with columns:
 
 **Notes:**
 - Many clonotypes had unresolved TRBV genes; therefore, analyses including TRBV features were restricted to family-level resolution
-- A seconday analysis was conducted with TRBV gene usage as quantitative phenotype to evaluate HLA associations with finer-resolution repertoire structure
+- A seconday analysis was conducted with TRBV gene usage as a quantitative phenotype to evaluate HLA associations with finer-resolution repertoire structure
 
 
 ---
