@@ -14,7 +14,7 @@ We analysed controlled-access germline genotype data and tumour TCR sequencing p
 ## tcrQTL analysis
 ### Quantitative phenotypes
 - TCR features were quantified as the number of templates with a given feature, normalised by the total productive templates per sample.
-- Features were residualised for covariates, rank normalised, and standardised before analysis
+- Features were residualised for covariates, rank-normalised, and standardised before analysis
 - Univariate association analyses used marginal and regularised linear regression with cross-validation, including LASSO, elastic net, GBLUP, and BSLMM: `./code/tcrQTL/ImmunoXcan_compute-weights.R`
 - Multivariate association analyses modelled TCR features jointly using regularised multivariate methods with cross-validation, including MRCE, multivariate elastic net, sparse PLS, sparse group LASSO, multi-task LASSO, joinet stacked elastic net, and super learner stacking: `./code/tcrQTL/ImmunoXcan_compute-weights_multivariate.R`
 - Heritability was estimated using GREML with a modified multi-allelic GRM for HLA loci: `./code/tcrQTL/GRM_multiallelic.R`
