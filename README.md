@@ -13,13 +13,25 @@ We analysed controlled-access germline genotype data and tumour TCR sequencing p
 
 ## tcrQTL analysis
 ### Quantitative phenotypes
-Residualised, rank normalised, standardised
-Amino acid frequency at each CDR3 position for each length, plus joint frequency of TRBV and amino acid frequency at each CDR3 position of each length
+
+**Features:**
+- CDR3 position-specific amino acid frequencies: 
+- Joint TRBV family + CDR3 position-specific amino acid frequencies:
+- TRBV family usage (primary V gene trait):
+- TRBV gene usage (secondary V gene trait):
+- 
+
+
+- Residualised, rank normalised, standardised
+- Amino acid frequency at each CDR3 position for each length, plus joint frequency of TRBV and amino acid frequency at each CDR3 position of each length
 TRBV gene/family usage
 Number of templates for the given feature normalised by the total number of productive templates
 Linear regression
 Univariate regularised (LASSO, BSLMM, GBLUP, elastic net) (reference script) and multivariate regularised regression (multivariate regression with covariance estimation, multivariate elastic net, joinet stacked elastic net, sparse PLS, sparse group lasso, multi-task lasso / L21 regularization, super learner stacking) (reference script)
 GREML heritability, modified multi-allelic GRM (reference script)
+V family justification
+
+
 ### Binary phenotypes
 GREML heritability, liability threshold model (reference script)
 Presence/absence
