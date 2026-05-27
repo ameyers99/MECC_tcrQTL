@@ -28,6 +28,14 @@ Residualised, rank-normalised, and standardised before analysis
 
 ---
 
+### TRBV gene usage
+- `./trbv_gene.txt.gz`
+
+**Notes:**
+- Restricted to receptors with resolved TRBV gene
+
+---
+
 ### TRBV family usage
 - `./trbv.txt.gz`
 
