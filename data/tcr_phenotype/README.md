@@ -76,8 +76,8 @@ Binarised into presence/absence and filtered for ≥k% prevalence before analysi
 - `./cdr3_gliph.txt.gz`
 
 **Notes:**
-- Pre-filtered for public sequences present in **n≥2 samples** before clustering with GLIPH
-- Public, unclustered sequences will overlap those in `./cdr3_seq.txt.gz`
+- Pre-filtered for public sequences present in **n≥2 samples** before clustering with GLIPH1
+- Includes sequences of 'singleton clusters' in `./cdr3_seq.txt.gz`
 - Restricted to receptors with CDR3 length >6 amino acids
 
 ---
@@ -86,6 +86,6 @@ Binarised into presence/absence and filtered for ≥k% prevalence before analysi
 - `./cdr3-trbv_gliph.txt.gz`
 
 **Notes:**
-- Pre-filtered for public sequences present in **n≥2 samples** before clustering with GLIPH
-- Public, unclustered sequences will overlap those in `./cdr3-trbv_seq.txt.gz`
+- Pre-filtered for public sequences present in **n≥2 samples** before clustering with GLIPH1
+- Includes sequences of 'singleton clusters' in `./cdr3-trbv_seq.txt.gz`
 - Restricted to receptors with resolved TRBV family and CDR3 length >6 amino acids
