@@ -15,7 +15,7 @@ Files provided in **long format** with columns:
 
 ## Quantitative phenotypes
 
-Residualised, rank-normalised, and standardised before analysis
+Residualised for covariates, rank-normalised, and standardised before analysis
 
 ### CDR3 position-specific amino acid frequencies
 - `./cdr3_aa.txt.gz`
