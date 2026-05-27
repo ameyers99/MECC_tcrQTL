@@ -13,12 +13,13 @@ We analysed controlled-access germline genotype data and tumour TCR sequencing p
 
 ## tcrQTL analysis
 ### Quantitative phenotypes
-- TCR features were quantified as the number of templates with a given feature, normalised by the total productive templates per sample. Templates were used to ensure comparable scales across batches, reducing bias from PCR amplification and sequencing depth differences; further, template-based normalisation better reflects clonotype abundance than reads.
+- TCR features were quantified as the number of templates with a given feature, normalised by the total productive templates per sample.
 - Features were residualised for covariates, rank normalised, and standardised before analysis
 - Univariate association analyses used marginal and regularised linear regression with cross-validation, including LASSO, elastic net, GBLUP, and BSLMM: `./code/tcrQTL/ImmunoXcan_compute-weights.R`
 - Multivariate association analyses modelled TCR features jointly using regularised multivariate methods with cross-validation, including MRCE, multivariate elastic net, sparse PLS, sparse group LASSO, multi-task LASSO, joinet stacked elastic net, and super learner stacking: `./code/tcrQTL/ImmunoXcan_compute-weights_multivariate.R`
 - Heritability was estimated using GREML with a modified multi-allelic GRM for HLA loci: `./code/tcrQTL/GRM_multiallelic.R`
 - Regularised regression methods excluded the most common allele/residue at each locus as reference
+
 **Features:**
 - CDR3 position-specific amino acid frequencies: `./data/tcr_phenotype/cdr3_aa.txt.gz`
 - Joint TRBV family + CDR3 position-specific amino acid frequencies: `./data/tcr_phenotype/cdr3-trbv_aa_public.txt.gz`
@@ -29,6 +30,7 @@ We analysed controlled-access germline genotype data and tumour TCR sequencing p
 - TCR features were quantified as above, and binarised into presence/absence traits before analysis
 - Marginal association analyses used Firth-type penalised logistic regression, adjusted for covariates: `./code/tcrQTL/ImmunoXcan_logit_sumstats.R`
 - Heritability was estimated using GREML and transformed to the underlying liability scale using the observed feature prevalence. We used a modified multi-allelic GRM for HLA loci: `./code/tcrQTL/GRM_multiallelic.R`
+
 **Features:**
 - CDR3 amino acid sequences: `./data/tcr_phenotype/cdr3_seq.txt.gz`
 - Joint TRBV family + CDR3 amino acid sequences: `./data/tcr_phenotype/cdr3-trbv_seq.txt.gz`
