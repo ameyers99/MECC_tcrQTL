@@ -26,6 +26,8 @@ We analysed controlled-access germline genotype data and tumour TCR sequencing p
 - TRBV family usage (primary V gene trait): `./data/tcr_phenotype/trbv.txt.gz`
 - TRBV gene usage (secondary V gene trait): `./data/tcr_phenotype/trbv-gene.txt.gz`
 
+---
+
 ### Binary phenotypes
 - TCR features were quantified as above, and binarised into presence/absence traits before analysis
 - Marginal association analyses used Firth-type penalised logistic regression, adjusted for covariates: `./code/tcrQTL/ImmunoXcan_logit_sumstats.R`
