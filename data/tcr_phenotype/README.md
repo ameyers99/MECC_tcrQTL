@@ -61,6 +61,7 @@ Binarised into presence/absence and filtered for ≥1% prevalence before analysi
 
 **Notes:**
 - Restricted to receptors with resolved TRBV family
+- Total number of productive templates used as denominator to normalise feature frequency, irrespecitve of TRBV resolution, to minimise sample-specific biases in sequencing quality
 
 ---
 
