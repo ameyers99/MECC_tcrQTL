@@ -35,6 +35,7 @@ Residualised for covariates, rank-normalised, and standardised before analysis
 **Notes:**
 - Stratified by CDR3 length;
 - Restricted to length 12-18 amino acids (captures 95% of receptors in the cohort)
+- Filtered for features present in ≥10% of the sample prior to upload
 
 **TCR ID format:** `TRBV family + CDR3-length-position-residue`
 
