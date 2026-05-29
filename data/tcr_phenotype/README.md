@@ -9,6 +9,7 @@ Files provided in **long format** with columns:
 **Notes:**
 - Many clonotypes had unresolved TRBV genes; therefore, analyses including TRBV features were restricted to family-level resolution
 - A seconday analysis was conducted with TRBV gene usage as a quantitative phenotype to evaluate HLA associations with finer-resolution repertoire structure
+- **rate** values for GLIPH2 antigen specificity clusters are computed as the sum of rate values for TCR sequences contributing to the cluster
 
 
 ---
