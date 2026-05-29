@@ -24,7 +24,6 @@ We analysed controlled-access germline genotype data and tumour TCR sequencing p
 - CDR3 position-specific amino acid frequencies: `./data/tcr_phenotype/cdr3_aa.txt.gz`
 - Joint TRBV family + CDR3 position-specific amino acid frequencies: `./data/tcr_phenotype/cdr3-trbv_aa_public.txt.gz`
 - TRBV family usage (primary V gene trait): `./data/tcr_phenotype/trbv.txt.gz`
-- TRBV gene usage (secondary V gene trait): `./data/tcr_phenotype/trbv-gene.txt.gz`
 
 ---
 
