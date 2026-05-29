@@ -49,14 +49,6 @@ Residualised for covariates, rank-normalised, and standardised before analysis
 
 ---
 
-### TRBV gene usage
-- `./trbv_gene.txt.gz`
-
-**Notes:**
-- Restricted to receptors with resolved TRBV gene
-
----
-
 ## Binary phenotypes
 Binarised into presence/absence and filtered for ≥1% prevalence before analysis.
 
