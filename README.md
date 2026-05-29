@@ -36,8 +36,9 @@ We analysed controlled-access germline genotype data and tumour TCR sequencing p
 **Features:**
 - CDR3 amino acid sequences: `./data/tcr_phenotype/cdr3_seq.txt.gz`
 - Joint TRBV family + CDR3 amino acid sequences: `./data/tcr_phenotype/cdr3-trbv_seq.txt.gz`
-- CDR3 specificity clusters (TRBV agnostic): `./data/tcr_phenotype/cdr3_gliph.txt.gz`
-- CDR3 specificity clusters (conditioned on TRBV family): `./data/tcr_phenotype/cdr3-trbv_gliph.txt.gz`
+- CDR3 global similarity clusters (TRBV agnostic): `./data/tcr_phenotype/cdr3_gliph2-global.txt.gz`
+- CDR3 global similarity clusters (conditioned on TRBV family): `./data/tcr_phenotype/cdr3-trbv_gliph2-global.txt.gz`
+- CDR3 local motifs (TRBV agnostic): `./data/tcr_phenotype/cdr3_gliph2-local.txt.gz`
 
 ## System requirements
 This project is designed to run in a containerised environment using Apptainer/Singularity on HPC systems.
