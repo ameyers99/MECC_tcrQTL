@@ -78,6 +78,7 @@ Binarised into presence/absence and filtered for ≥1% prevalence before analysi
 **Notes:**
 - Restricted to receptors with CDR3 length >6 amino acids
 - Sequences with a Hamming distance of 1 whose different amino acid has a BLOSUM62 score ≥0 are evaluated as global similarities
+- Prefiltered for clusters with ≥3 contributing TCRs
 
 ---
 
@@ -86,6 +87,7 @@ Binarised into presence/absence and filtered for ≥1% prevalence before analysi
 
 **Notes:**
 - Restricted to receptors with CDR3 length >6 amino acids
+- Prefiltered for motifs with ≥3 contributing TCRs
 
 ---
 
@@ -94,4 +96,5 @@ Binarised into presence/absence and filtered for ≥1% prevalence before analysi
 
 **Notes:**
 - Restricted to receptors with resolved TRBV family and CDR3 length >6 amino acids
+- Prefiltered for clusters with ≥3 contributing TCRs
 - Sequences with a Hamming distance of 1 whose different amino acid has a BLOSUM62 score ≥0 are evaluated as global similarities
