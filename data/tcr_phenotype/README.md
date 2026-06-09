@@ -45,6 +45,7 @@ Residualised for covariates, rank-normalised, and standardised before analysis
 
 **Notes:**
 - Restricted to receptors with resolved TRBV family
+- Total number of productive templates used to normalise feature frequency, irrespecitve of TRBV resolution, to minimise sample-specific biases in sequencing quality
 
 ---
 
