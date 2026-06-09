@@ -12,6 +12,7 @@ We analysed controlled-access germline genotype data and tumour TCR sequencing p
 - We therefore investigated whether HLA allomorphs (2-field alleles, class II heterodimers) and amino acid polymorphisms influence tumour-infiltrating TCR composition. These analyses support emerging genetic causal inference frameworks, including ImmunoXcan (https://github.com/ameyers99/ImmunoXcan) and HLAcoloc (https://github.com/DrGBL/hlacoloc), to identify putative HLA–TCR-cancer relationships for functional studies.
 
 ## tcrQTL analysis
+**See:** `./vignettes/QC/MECC_TCR-phenotypes.ipynb` **for descriptive statistics and QC analysis of data in** `./data/tcr_phenotype/`
 ### Quantitative phenotypes
 - TCR features were quantified as the number of templates with a given feature, normalised by the total productive templates per sample
 - Features were residualised for covariates, rank-normalised, and standardised before analysis
