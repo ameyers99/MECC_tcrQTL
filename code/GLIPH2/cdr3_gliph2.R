@@ -30,22 +30,22 @@ gliph2(
   cdr3_length_freq = NULL,
   ref_cluster_size = "original",
   sim_depth = 1000,
-  lcminp = 0.01, 
-  lcminove = c(1000, 100, 10),
+  lcminp = 0.05, 
+  lcminove = c(10, 10, 10),
   motif_distance_cutoff = 3,
   kmer_mindepth = 3,
   accept_sequences_with_C_F_start_end = TRUE,
-  min_seq_length = 6, # deviation from default
+  min_seq_length = 6,
   structboundaries = TRUE,
   boundary_size = 3,
   motif_length = base::c(2, 3, 4),
-  discontinuous_motifs = TRUE, # deviation from default
+  discontinuous_motifs = TRUE,
   local_similarities = TRUE,
   global_similarities = TRUE,
   global_vgene = FALSE, # Swap to TRUE when conditioning on TRBV family usage
   all_aa_interchangeable = FALSE,
   boost_local_significance = TRUE,
-  cluster_min_size = 2, # NB: post-hoc filtered for cluster_min_size = 3 (see line 98)
+  cluster_min_size = 3,
   hla_cutoff = 0.1,
   n_cores = 32
 )
@@ -63,7 +63,7 @@ pid <- fread(
 pid <- pid %>% rename(cdr3=tcr)
 
 # Local motif calls
-local <- read.delim("./MECC_tcrQTL/data/tcr_phenotype/GLIPH2/CDR3/local_similarities_minp_0.01_minove_1000_100_10_kmer_mindepth_3.txt")
+local <- read.delim("./MECC_tcrQTL/data/tcr_phenotype/GLIPH2/CDR3/local_similarities_minp_0.05_minove_10_10_10_kmer_mindepth_3.txt")
 local$motif <- paste0(local$motif,"_",local$start,"_",local$stop)
 local <- subset(local, num_in_sample >= 3) 
 setDT(local)
