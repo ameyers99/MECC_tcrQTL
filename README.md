@@ -16,12 +16,12 @@ We analysed controlled-access germline genotype data and tumour TCR sequencing p
 
 ### To balance data sparcity and biological interpretability, we prioritised features as follows:
 #### Primary analysis
-- CDR3 position-specific amino acid frequencies: structural repertoire composition
-- CDR3 enriched motifs: Antigen-driven repertoire convergence
+- CDR3 position-specific amino acid frequencies
+- CDR3 enriched motifs
 #### Secondary analysis
-- CDR3 amino acid sequences: Clonotype-level specificity
-- CDR3 global similarity clusters (TRBV agnostic): Convergent antigen-recognition groups
-- TRBV family usage: Germline bias / HLA contact preference
+- CDR3 amino acid sequences
+- CDR3 global similarity clusters (TRBV agnostic)
+- TRBV family usage
 #### Exploratory/sensitivity analysis
 - Joint TRBV family + CDR3 amino acid sequences
 - CDR3 global similarity clusters (conditioned on TRBV family)
