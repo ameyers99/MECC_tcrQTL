@@ -61,6 +61,7 @@ Binarised into presence/absence and filtered for ≥1% prevalence before analysi
 - Restricted to receptors with CDR3 length >6 amino acids
 - Sequences with a Hamming distance of 1 whose different amino acid has a BLOSUM62 score ≥0 are evaluated as global similarities
 - Filtered for clusters with ≥3 contributing TCRs
+- Raw GLIPH2 output stored in  `./GLIPH2/CDR3/global_similarities.txt.gz`
 
 ---
 
@@ -71,6 +72,7 @@ Binarised into presence/absence and filtered for ≥1% prevalence before analysi
 - Restricted to receptors with resolved TRBV family and CDR3 length >6 amino acids
 - Sequences with a Hamming distance of 1 whose different amino acid has a BLOSUM62 score ≥0 are evaluated as global similarities
 - Filtered for clusters with ≥3 contributing TCRs
+- Raw GLIPH2 output stored in `./GLIPH2/CDR3-TRBV/global_similarities.txt.gz`
 
 ---
 
@@ -81,3 +83,4 @@ Binarised into presence/absence and filtered for ≥1% prevalence before analysi
 - Restricted to receptors with CDR3 length >6 amino acids
 - Restricted 2mer, 3mer, and 4mers, including discontinuous motifs 
 - Filtered for motifs with ≥3 contributing TCRs, as well as Fisher score <0.05 and OvE ≥10-fold enrichment compared to GLIPH naive reference repertoire
+- Raw GLIPH2 output stored in  `./GLIPH2/CDR3/local_similarities_minp_0.05_minove_10_10_10_kmer_mindepth_3.txt.gz`
