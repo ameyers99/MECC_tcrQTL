@@ -34,7 +34,7 @@ We analysed controlled-access germline genotype data and tumour TCR sequencing p
 - Univariate association analyses used marginal and regularised linear regression with cross-validation, including LASSO, elastic net, GBLUP, and BSLMM: `./code/tcrQTL/ImmunoXcan_compute-weights.R`
 - Multivariate association analyses modelled TCR features jointly using regularised multivariate methods with cross-validation, including MRCE, multivariate elastic net, sparse PLS, sparse group LASSO, multi-task LASSO, joinet stacked elastic net, and super learner stacking: `./code/tcrQTL/ImmunoXcan_compute-weights_multivariate.R`
 - Heritability was estimated using GREML with a modified multi-allelic GRM for HLA loci: `./code/tcrQTL/GRM_multiallelic.R`
-- Regularised regression methods excluded the most common allele/residue at each locus as reference
+- Regularised regression methods and multivariate omnibus likelihood ratio tests excluded the most common allele/residue at each locus as reference
 
 **Features:**
 - CDR3 position-specific amino acid frequencies: `./data/tcr_phenotype/cdr3_aa.txt.gz`
@@ -46,6 +46,7 @@ We analysed controlled-access germline genotype data and tumour TCR sequencing p
 - TCR features were quantified as above, and binarised into presence/absence traits before analysis
 - Marginal association analyses used Firth-type penalised logistic regression, adjusted for covariates: `./code/tcrQTL/ImmunoXcan_logit_sumstats.R`
 - Heritability was estimated using GREML and transformed to the underlying liability scale using the observed feature prevalence. We used a modified multi-allelic GRM for HLA loci: `./code/tcrQTL/GRM_multiallelic.R`
+- Multivariate omnibus likelihood ratio tests excluded the most common allele/residue at each locus as reference
 
 **Features:**
 - CDR3 amino acid sequences: `./data/tcr_phenotype/cdr3_seq.txt.gz`
