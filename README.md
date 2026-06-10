@@ -14,7 +14,7 @@ We analysed controlled-access germline genotype data and tumour TCR sequencing p
 ## tcrQTL analysis
 **See:** `./vignettes/QC/MECC_TCR-phenotypes.ipynb` **for descriptive statistics and QC analysis of data in** `./data/tcr_phenotype/`
 
-## To balance data sparcity and biological interpretability, we prioritised features as follows:
+### To balance data sparcity and biological interpretability, we prioritised features as follows:
 #### Primary analysis
 - CDR3 position-specific amino acid frequencies: structural repertoire composition
 - CDR3 enriched motifs: Antigen-driven repertoire convergence
