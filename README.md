@@ -13,16 +13,17 @@ We analysed controlled-access germline genotype data and tumour TCR sequencing p
 
 ## tcrQTL analysis
 **See:** `./vignettes/QC/MECC_TCR-phenotypes.ipynb` **for descriptive statistics and QC analysis of data in** `./data/tcr_phenotype/`
-**We prioritised features for analysis as follows:**
-#### Primary features
-- ...
-- ...
-#### Secondary features
-- ...
-- ...
-
-
-
+### To balance data sparcity and biological interpretability, we prioritised features as follows:
+#### Primary analysis
+- CDR3 position-specific amino acid frequencies: structural repertoire composition
+- CDR3 enriched motifs: Antigen-driven repertoire convergence
+#### Secondary analysis
+- CDR3 amino acid sequences: Clonotype-level specificity
+- CDR3 global similarity clusters (TRBV agnostic): Convergent antigen-recognition groups
+- TRBV family usage: Germline bias / HLA contact preference
+#### Exploratory/sensitivity analysis
+- Joint TRBV family + CDR3 amino acid sequences
+- CDR3 global similarity clusters (conditioned on TRBV family)
 
 ### Quantitative phenotypes
 - TCR features were quantified as the number of templates with a given feature, normalised by the total productive templates per sample
@@ -34,7 +35,6 @@ We analysed controlled-access germline genotype data and tumour TCR sequencing p
 
 **Features:**
 - CDR3 position-specific amino acid frequencies: `./data/tcr_phenotype/cdr3_aa.txt.gz`
-- Joint TRBV family + CDR3 position-specific amino acid frequencies: `./data/tcr_phenotype/cdr3-trbv_aa_public.txt.gz`
 - TRBV family usage: `./data/tcr_phenotype/trbv.txt.gz`
 
 ---
@@ -49,7 +49,7 @@ We analysed controlled-access germline genotype data and tumour TCR sequencing p
 - Joint TRBV family + CDR3 amino acid sequences: `./data/tcr_phenotype/cdr3-trbv_seq.txt.gz`
 - CDR3 global similarity clusters (TRBV agnostic): `./data/tcr_phenotype/cdr3_gliph2-global.txt.gz`
 - CDR3 global similarity clusters (conditioned on TRBV family): `./data/tcr_phenotype/cdr3-trbv_gliph2-global.txt.gz`
-- CDR3 local motifs (TRBV agnostic): `./data/tcr_phenotype/cdr3_gliph2-local.txt.gz`
+- CDR3 enriched motifs: `./data/tcr_phenotype/cdr3_gliph2-local.txt.gz`
 
 ## System requirements
 This project is designed to run in a containerised environment using Apptainer/Singularity on HPC systems.
