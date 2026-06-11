@@ -23,6 +23,7 @@ Residualised for covariates, rank-normalised, and standardised before analysis
 **Notes:**
 - Stratified by CDR3 length;
 - Restricted to length 12-18 amino acids (captures 95% of receptors in the cohort)
+- Frequency call files stratified by position and length are stored in `./CDR3-L-P-R`
 
 **TCR ID format:** `CDR3-length-position-residue`
 
