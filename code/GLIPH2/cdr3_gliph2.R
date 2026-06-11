@@ -63,7 +63,7 @@ pid <- fread(
 pid <- pid %>% rename(cdr3=tcr)
 
 # Local motif calls
-local <- read.delim("./MECC_tcrQTL/data/tcr_phenotype/GLIPH2/CDR3/local_similarities_minp_0.05_minove_10_10_10_kmer_mindepth_3.txt")
+local <- read.delim("./MECC_tcrQTL/data/tcr_phenotype/GLIPH2/CDR3/local_similarities_minp_0.05_minove_10_10_10_kmer_mindepth_3.txt.gz")
 local$motif <- paste0(local$motif,"_",local$start,"_",local$stop)
 local <- subset(local, num_in_sample >= 3) 
 setDT(local)
@@ -93,7 +93,7 @@ write.table(
 )
 
 # Global similarity calls
-global <- read.delim("./MECC_tcrQTL/data/tcr_phenotype/GLIPH2/CDR3/global_similarities.txt")
+global <- read.delim("./MECC_tcrQTL/data/tcr_phenotype/GLIPH2/CDR3/global_similarities.txt.gz")
 global <- subset(global, cluster_size >= 3)
 global <- subset(global, cluster_tag != "%")
 global$cluster_tag <- paste0(global$cluster_tag,"_",global$aa_at_position)
