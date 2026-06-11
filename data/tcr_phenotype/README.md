@@ -24,6 +24,7 @@ Residualised for covariates, rank-normalised, and standardised before analysis
 - Stratified by CDR3 length;
 - Restricted to length 12-18 amino acids (captures 95% of receptors in the cohort)
 - Frequency call files stratified by position and length are stored in `./CDR3-L-P-R`
+- Analyses were restricted to IMGT positions 106-117, which directly contact peptide-HLA and carry sufficient entropy
 
 **TCR ID format:** `CDR3-length-position-residue`
 
