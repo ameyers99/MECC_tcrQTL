@@ -9,7 +9,7 @@ We analysed controlled-access germline genotype data and tumour TCR sequencing p
 - HLA variants influence sporadic colorectal cancer risk, and recent fine-mapping studies have identified HLA allomorphs and amino acid polymorphisms modifying risk in Lynch syndrome carriers, who are predisposed to immunogenic MMRd tumours.
 - HLA genotypes are established quantitative trait loci (QTL) for TCR repertoire features.
 - Risk-modifying HLA variants are hypothesised to influence colorectal cancer risk by altering tumour neoantigen presentation to hypervariable TCRs.
-- We therefore investigated whether HLA allomorphs (2-field alleles, class II heterodimers) and amino acid polymorphisms influence tumour-infiltrating TCR composition. These analyses support emerging genetic causal inference frameworks, including ImmunoXcan (https://github.com/ameyers99/ImmunoXcan) and HLAcoloc (https://github.com/DrGBL/hlacoloc), to identify putative HLA–TCR-cancer relationships for functional studies.
+- We therefore investigated whether HLA allomorphs (2-field alleles, class II heterodimers) and amino acid polymorphisms influence tumour-infiltrating TCR composition. These analyses support emerging genetic causal inference frameworks, including ImmunoXcan (https://github.com/ameyers99/ImmunoXcan) and HLAcoloc (https://github.com/DrGBL/hlacoloc), to identify putative HLA–TCR-cancer relationships for functional studies and neoantigen discovery.
 
 ## tcrQTL analysis
 **See:** `./vignettes/QC/MECC_immunoSEQ_QC.ipynb` **for descriptive statistics and QC analysis of data in** `./data/tcr_phenotype/`
