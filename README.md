@@ -1,5 +1,5 @@
 # Overview
-We tested HLA allomorphs and amino acid polymorhisms for association with colorectal tumour-infiltrating T-cell receptor (TCR) composition. We refer to these as TCR quantitative trait loci (tcrQTL) analyses. Further, we tested for heterogeneity by tumour subtype, including mismatch repair deficiency (MMRd), and conducted HLA colocalisation analyses with colorectal cancer risk.
+We tested HLA allomorphs and amino acid polymorhisms for association with colorectal tumour-infiltrating T-cell receptor (TCR) composition. We refer to these as TCR quantitative trait loci (tcrQTL) analyses. Further, we tested for heterogeneity by tumour subtype, including mismatch repair deficiency (MMRd), and conducted HLA colocalisation (HLAcoloc) analyses with colorectal cancer risk.
 
 ## Main dataset
 We analysed controlled-access germline genotype data and tumour TCR sequencing profiles from 2,750 incident, population-based colorectal cancer cases from the Molecular Epidemiology of Colorectal Cancer (MECC) study, generated using the immunoSEQ platform. Raw TCR sequencing data are available via the Adaptive Biotechnologies immuneACCESS repository: https://clients.adaptivebiotech.com/pub/schmit-2025-bmcg. 
