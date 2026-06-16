@@ -4,7 +4,7 @@ Files provided in **long format** with columns:
 
 - **Sample**: Unique patient identifier  
 - **tcr**: TCR feature identifier (see file-specific definitions below)  
-- **rate**: Proportion of productive templates within the relevant phenotype class. Templates were used to ensure comparable scales across batches, reducing bias from PCR amplification and sequencing depth differences. Further, template-based normalisation better reflects underlying clonotype abundance compared to reads.
+- **rate**: Proportion of productive templates within the relevant phenotype class. Templates were used to ensure comparable scales across batches/primers, reducing bias from PCR amplification and sequencing depth differences. Further, template-based normalisation better reflects underlying clonotype abundance compared to reads.
 
 **Notes:**
 - Many clonotypes had unresolved TRBV genes; therefore, analyses including TRBV features were restricted to family-level resolution
