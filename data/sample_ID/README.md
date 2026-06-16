@@ -1,2 +1,4 @@
-## Sample IDs for MECC HLA-tcrQTL analyses
-- IDs all colorectal cancers, MMR-deficient, and MMR-proficient
+## QC'd sample IDs for MECC HLA-tcrQTL analyses
+- All cases: `MECC_all-CRC_IID.tsv`
+- MMR-deficient cases: `MECC_MMRd_IID.tsv`
+- MMR-proficient cases: `MECC_MMRp_IID.tsv`
