@@ -16,7 +16,7 @@ We analysed controlled-access germline genotype data and tumour TCR sequencing p
 
 ### To balance data sparcity and biological interpretability, we prioritised features as follows:
 #### Primary analysis
-- CDR3 position-specific amino acid frequencies
+- CDR3 position-specific amino acid frequencies (analogous to Ishigaki K, et al. Nat Genet, 2022)
 - CDR3 enriched motifs
 #### Secondary analysis
 - CDR3 amino acid sequences
