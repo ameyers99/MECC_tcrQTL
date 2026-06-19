@@ -1,5 +1,5 @@
 ## Environment specification (Dockerfile) to build a reproducible container for local development and HPC execution via Apptainer
-### Build dDcker image (local machine):
+### Build Docker image (local machine):
 - `docker build -t tcr_qtl:1.0 --file tcr_qtl.dockerfile .`
 - `docker save tcr_qtl:1.0 > tcr_qtl.tar`
 ### Build Apptainer image (HPC or local)
