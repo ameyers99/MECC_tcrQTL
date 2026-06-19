@@ -6,3 +6,7 @@
 - `apptainer build tcr_qtl_1.0.sif docker-archive://tcr_qtl.tar`
 ### or simply:
 - `apptainer build tcr_qtl_1.0.sif docker-daemon://tcr_qtl:1.0`
+
+---
+
+## For an example of how to run see `./slurm`
