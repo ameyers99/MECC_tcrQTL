@@ -1,5 +1,5 @@
 ## Environment specification (Dockerfile) to build a reproducible container for local development and HPC execution via Apptainer/Singularity.
-### For example, to create a .sif file for running analyses with Apptainer, run the following on a machine with docker insya:
+### For example, to create a .sif file for running analyses with Apptainer, run the following on a machine with docker installed:
 - `docker build -t tcr_qtl:1.0 --file tcr_qtl.dockerfile .`
 ### Followed by:
 - `docker save tcr_qtl:1.0 > tcr_qtl.tar`
