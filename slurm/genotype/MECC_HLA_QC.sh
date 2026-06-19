@@ -8,13 +8,15 @@
 #SBATCH --job-name=MECC_HLA_QC
 
 # job command(s) below
-# RUN WITHIN THE 'MECC_tcrQTL' PROJECT DIRECTORY
+PROJ_DIR="<PATH TO CLONED 'MECC_tcrQTL' PROJECT DIRECTORY>"
+BFILE="<PATH TO SNP2HLA PLINK v1.9 FILE PREFIX (NO .bed/.bim/.fam)>"
+APPTAINER_MODULE="<APPTAINER MODULE CALL, TESTED ON 'Apptainer/1.1.8'"
 
-PROJ_DIR="<PATH TO 'MECC_tcrQTL' PROJECT DIRECTORY>"
-BFILE="<PATH TO OUTPUT SNP2HLA PLINK1 FILES>"
+module purge
+module load $APPTAINER_MODULE
 
 cd $PROJ_DIR
-
+Apptainer exec ./env/tcr_qtl_1.0.sif \
 Rscript --vanilla ./code/genotype/MECC_HLA_QC.R \
 --output_dir ./data/genotype \
 --tmp ./data/genotype/tmp/tmp \
