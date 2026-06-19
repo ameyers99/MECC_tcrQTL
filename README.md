@@ -60,7 +60,7 @@ This project is designed to run in a containerised environment using Apptainer/S
 ### Container environment
 All software dependencies are defined in the `env/` directory:
 - `Dockerfile`: defines system libraries and R environment
-The environment can be built using Docker and executed via Apptainer/Singularity on HPC systems.
+- The environment can be built using Docker and executed via Apptainer/Singularity on HPC systems.
 ### HPC runtime requirements
 To execute workflows on HPC systems:
 - Apptainer ≥ 1.1.8 (for running container images)
