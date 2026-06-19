@@ -59,8 +59,7 @@ We analysed controlled-access germline genotype data and tumour TCR sequencing p
 This project is designed to run in a containerised environment using Apptainer/Singularity on HPC systems.
 ### Container environment
 All software dependencies are defined in the `env/` directory:
-- `Dockerfile`: defines system libraries and base R environment
-- `renv.lock`: specifies exact R package versions
+- `Dockerfile`: defines system libraries and R environment
 The environment can be built using Docker and executed via Apptainer/Singularity on HPC systems.
 ### HPC runtime requirements
 To execute workflows on HPC systems:
@@ -68,13 +67,7 @@ To execute workflows on HPC systems:
 - SLURM (job scheduler)
 - Optional module tools (if not using containers directly)
 ### Core external tools (inside container)
-- GCTA (v1.94.1)
-- PLINK (v1.9b_6.21)
+- GCTA (v1.95.2)
+- PLINK (v1.9b)
 - GEMMA (v0.98.5)
-- OpenMPI (v4.1.4)
-### R environment
-R (v4.2.2) and all package dependencies are managed via `renv` and defined in:
-- `env/renv.lock`
-Restore with:
-```r
-renv::restore()
+- R (v4.2.2) and all package dependencies
