@@ -223,7 +223,7 @@ weights.mv = function(genos, pheno, method) {
   sds = apply(genos, 2, sd)
   keep = sds != 0 & !is.na(sds)
   
-  boot_list = lapply(1:10,function(i){jitter(pheno, amount=0.05)})
+  boot_list = lapply(1:10,function(i){jitter(pheno, amount=0.005)})
   pheno_rep = rlist::list.rbind(boot_list)
   
   fit = compute_isotwas(X = genos[,keep], Y = pheno, Y.rep = pheno_rep, R = 10, 
