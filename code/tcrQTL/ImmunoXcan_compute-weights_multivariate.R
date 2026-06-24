@@ -230,7 +230,7 @@ weights.mv = function(genos, pheno, method) {
                         id = rownames(pheno_rep), omega_est = 'replicates',
                         omega_nlambda = 10, method = c(method), predict_nlambda = 10,
                         family = "gaussian", scale = FALSE, alpha = 0.5, nfolds = opt$crossval,
-                        verbose = FALSE, par = TRUE, n.cores = opt$ncores, seed = 1789,
+                        verbose = FALSE, par = TRUE, n.cores = opt$ncores, seed = 1999,
                         run_all = FALSE, return_all = TRUE, tol.in = 0.001, maxit.in = 1000)
   
   if (!is.list(fit$best_models) ||
