@@ -230,7 +230,7 @@ weights.mv = function(genos, pheno, method) {
   pheno_rep = rlist::list.rbind(boot_list)
   
   fit = compute_isotwas(X = genos[,keep], Y = pheno, Y.rep = pheno_rep, R = 10, 
-                        id = rownames(pheno_rep), omega_est = 'replicates',
+                        id = rownames(pheno_rep), omega_est = 'mean',
                         omega_nlambda = 10, method = c(method), predict_nlambda = 10,
                         family = "gaussian", scale = FALSE, alpha = 0.5, nfolds = opt$crossval,
                         verbose = FALSE, par = TRUE, n.cores = opt$ncores, seed = 1999,
