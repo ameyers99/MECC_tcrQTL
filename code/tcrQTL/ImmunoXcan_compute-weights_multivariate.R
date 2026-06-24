@@ -32,6 +32,8 @@ suppressMessages({
 option_list = list(
   make_option("--input_file", action="store", default=NA, type='character', 
               help="Path to full TCR call file (space-separated, long format; columns: Sample, *pheno_name*, rate)"),
+  make_option("--subset_file", action="store", default=NA, type='character', 
+              help="Partitioned file with list of TCRs to process in this job [optional]"),
   make_option("--sample_file", action="store", default=NA, type='character', 
               help="Path to sample IDs for analysis (single-column, no header"),
   make_option("--output_dir", action="store", default=NA, type='character', 
@@ -252,6 +254,12 @@ weights.mv = function(genos, pheno, method) {
 
 # Read in tcr file
 tcr <- read.delim(opt$input_file,sep=" ")
+
+if (!is.na(opt$subset_file)) {
+  subset <- scan(opt$subset_file, what=character())
+  tcr <- tcr[tcr$tcr %in% subset, ]
+}
+
 tcr <- tcr %>% rename(IID = Sample)
 if ( opt$verbose >= 1 ) cat("Computing multivariate weights for",opt$input_file,"\n")
 
