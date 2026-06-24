@@ -54,6 +54,9 @@ option_list = list(
               help="Minimum expression prevalence for which to compute weights [default: %default]"), 
   make_option("--crossval", action="store", default=5, type='double',
               help="How many folds of cross-validation [default: %default]"),
+  make_option("--jitter", action="store", default=0.05, type='double',
+              help="Amount of jitter to add to expression matrix;\n
+              aids in seeding estimation process of correlation between TCR features/error in multivariate model [default: %default]"),
   make_option("--ncores", action="store", default=5, type='double',
               help="Number of cores to use [default: %default]"),
   make_option("--verbose", action="store", default=1, type="integer",
@@ -223,7 +226,7 @@ weights.mv = function(genos, pheno, method) {
   sds = apply(genos, 2, sd)
   keep = sds != 0 & !is.na(sds)
   
-  boot_list = lapply(1:10,function(i){jitter(pheno, amount=0.005)})
+  boot_list = lapply(1:10,function(i){jitter(pheno, amount=opt$jitter)})
   pheno_rep = rlist::list.rbind(boot_list)
   
   fit = compute_isotwas(X = genos[,keep], Y = pheno, Y.rep = pheno_rep, R = 10, 
