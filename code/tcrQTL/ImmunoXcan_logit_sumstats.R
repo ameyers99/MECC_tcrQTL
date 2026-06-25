@@ -6,9 +6,6 @@
 # Date: 2nd Oct 2025
 ########################################################
 
-.libPaths("/home/ameyers/R/lib/4.2.2")
-lib <- .libPaths()[1]
-
 # References
 # - FUSION TWAS (PMID:26854917)
 
