@@ -54,7 +54,7 @@ option_list = list(
               help="Minimum expression prevalence for which to compute weights [default: %default]"), 
   make_option("--crossval", action="store", default=5, type='double',
               help="How many folds of cross-validation [default: %default]"),
-  make_option("--jitter", action="store", default=0.05, type='double',
+  make_option("--jitter", action="store", default=NULL, type='double',
               help="Amount of jitter to add to expression matrix;\n
               aids in seeding estimation of correlation between TCR features/error in multivariate model;\n
               0=factor*z/50 and NULL=factor*d/5, otherwise a specific value can be entered [default: %default]"),
