@@ -6,9 +6,6 @@
 # Date: 2nd Oct 2025
 ########################################################
 
-# References
-# - FUSION TWAS (PMID:26854917)
-
 set.seed(1999)
 
 # Load packages
