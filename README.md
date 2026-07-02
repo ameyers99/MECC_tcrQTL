@@ -67,7 +67,7 @@ To execute workflows on HPC systems:
 - SLURM (job scheduler)
 - Optional module tools (if not using containers directly)
 ### Core external tools (inside container)
-- GCTA (v1.95.2)
+- GCTA (v1.94.1)
 - PLINK (v1.9b)
 - GEMMA (v0.98.5)
 - R (v4.2.2) and all package dependencies
