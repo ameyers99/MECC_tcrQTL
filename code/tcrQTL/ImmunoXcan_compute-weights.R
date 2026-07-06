@@ -750,7 +750,6 @@ for (g in names(groups)) {
 # --- CROSS-VALIDATION
 # ------------------------------------------------------------------------
 
-set.seed(1)
 cv.performance = matrix(NA,nrow=2,ncol=M)
 rownames(cv.performance) = c("rsq","pval")
 colnames(cv.performance) = models
