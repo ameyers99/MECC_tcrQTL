@@ -386,7 +386,8 @@ for (hla in hlas) {
     logistf(
       formula = form,
       data = geno_df,
-      na.action = na.omit
+      na.action = na.omit,
+	  iter=50
     ),
     error = function(e) {
       message("Model failed for ", hla, ": ", e$message)
@@ -529,7 +530,8 @@ for (g in names(groups)) {
     logistf(
       formula = form1,
       data = X,
-      na.action = na.omit
+      na.action = na.omit,
+	  iter=50
     ),
     error = function(e) {
       message("Model failed for full model for ", g, ": ", e$message)
@@ -540,7 +542,8 @@ for (g in names(groups)) {
     logistf(
       formula = form2,
       data = X,
-      na.action = na.omit
+      na.action = na.omit,
+	  iter=50
     ),
     error = function(e) {
       message("Model failed for null model for ", g, ": ", e$message)
