@@ -527,11 +527,10 @@ for (g in names(groups)) {
   )
   form2 <- as.formula("outcome ~ 1")
   }
-
    lr2_fit1 <- tryCatch(
-    logistf(
 	{
 	setTimeLimit(elapsed = 2000, transient = TRUE)
+      logistf(
       formula = form1,
       data = X,
       na.action = na.omit
@@ -559,10 +558,9 @@ for (g in names(groups)) {
 
   pval   = NA
   df     = NA
-  dev = NA
   n_samples    = NA
 
-  if (!is.null(lr2_fit1)) {
+  if (!is.null(lr2_fit1) && !is.null(lr2_fit2)) {
     n_samples <- nobs(lr2_fit1)
     lrt <- anova(lr2_fit2, lr2_fit1)
     pval <- lrt$pval
