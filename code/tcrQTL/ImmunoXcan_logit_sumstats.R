@@ -384,7 +384,7 @@ for (hla in hlas) {
     }
    lr2_fit <- tryCatch(
 	{
-	setTimeLimit(elapsed = 2000, transient = TRUE)
+	setTimeLimit(elapsed = 300, transient = TRUE)
     logistf(
       formula = form,
       data = geno_df,
@@ -529,7 +529,7 @@ for (g in names(groups)) {
   }
    lr2_fit1 <- tryCatch(
 	{
-	setTimeLimit(elapsed = 2000, transient = TRUE)
+	setTimeLimit(elapsed = 300, transient = TRUE)
       logistf(
       formula = form1,
       data = X,
@@ -543,7 +543,7 @@ for (g in names(groups)) {
   )
   lr2_fit2 <- tryCatch(
   {
-   setTimeLimit(elapsed = 2000, transient = TRUE)
+   setTimeLimit(elapsed = 300, transient = TRUE)
     logistf(
       formula = form2,
       data = X,
