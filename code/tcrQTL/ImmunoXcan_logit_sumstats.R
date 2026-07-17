@@ -383,14 +383,11 @@ for (hla in hlas) {
     form <- as.formula(paste("outcome ~", hla))
     }
    lr2_fit <- tryCatch(
-	{
-	setTimeLimit(elapsed = 300, transient = TRUE)
     logistf(
       formula = form,
       data = geno_df,
       na.action = na.omit
-    )
-		},
+    ),
     error = function(e) {
       message("Model failed for ", hla, ": ", e$message)
       return(NULL)
@@ -528,28 +525,22 @@ for (g in names(groups)) {
   form2 <- as.formula("outcome ~ 1")
   }
    lr2_fit1 <- tryCatch(
-	{
-	setTimeLimit(elapsed = 300, transient = TRUE)
       logistf(
       formula = form1,
       data = X,
       na.action = na.omit
-    )
-		},
+    ),
     error = function(e) {
       message("Model failed for full model for ", g, ": ", e$message)
       return(NULL)
     }
   )
   lr2_fit2 <- tryCatch(
-  {
-   setTimeLimit(elapsed = 300, transient = TRUE)
     logistf(
       formula = form2,
       data = X,
       na.action = na.omit
-    )
-	  },
+    ),
     error = function(e) {
       message("Model failed for null model for ", g, ": ", e$message)
       return(NULL)
@@ -559,6 +550,7 @@ for (g in names(groups)) {
   pval   = NA
   df     = NA
   n_samples    = NA
+  chisq = NA
 
   if (!is.null(lr2_fit1) && !is.null(lr2_fit2)) {
     n_samples <- nobs(lr2_fit1)
