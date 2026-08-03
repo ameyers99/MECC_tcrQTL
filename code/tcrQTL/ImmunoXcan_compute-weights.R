@@ -355,6 +355,7 @@ if ( sum(models=="bslmm" | models=="blup") != 0 && system( paste(opt$PATH_gemma,
          message(sprintf("Skipping %s - only %.1f%% of samples have non-zero rate",
                          tcr_pheno, tcr.pe * 100))
      }
+	 cleanup()
      next
   }
 
