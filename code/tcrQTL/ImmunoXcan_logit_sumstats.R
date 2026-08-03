@@ -155,6 +155,7 @@ setnames(all_samples, "V1", "Sample")
          message(sprintf("Skipping %s - %.1f%% of samples have non-zero rate",
                          tcr_pheno, tcr.pe * 100))
      }
+	 cleanup()
      next
   }
 
