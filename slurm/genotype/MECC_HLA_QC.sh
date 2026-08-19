@@ -1,5 +1,4 @@
 #!/bin/bash
-#SBATCH --partition=sapphire
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=1
